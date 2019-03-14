@@ -22,7 +22,7 @@ class KategoriController extends Controller
 
     public function cari(Request $request){
         $cari = $request->get('q');
-        $result = KategoriModel::where('nama_kategori','LIKE','%'.$cari.'%')->paginate(5);
+        $result = KategoriModel::where('slug','LIKE','%'.$cari.'%')->paginate(5);
         return view('kategori',compact('cari'));
     }
 }
