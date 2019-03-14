@@ -35,5 +35,6 @@ Route::get('kategori', function () {
 	Route::get('search', 'KategoriController@search');
 })*/
 
-Route::get('/search', 'KategoriController@cari')->name('post.search');
-//Route::resource('kategori', 'KategoriController')->except(['destroy']);
+Route::get('/search','KategoriController@cari')->name('post.cari');
+//Route::get('/search', 'KategoriController@cari')->name('post.search');
+Route::resource('kategori', 'KategoriController')->except(['destroy']);

@@ -7,7 +7,7 @@
 <body>
 
 	@section('content')
-	@if(count($cari))
+	@if(count($result))
 
 	<section class="content">
       <div class="row">
